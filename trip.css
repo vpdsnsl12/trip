@@ -1,0 +1,686 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color--: #f7323f;
+    --point-color--: #1273e4;
+    --bg-color--: #99999a;
+}
+
+body {
+    font-family: yg-jalnan, JalnanGothic;
+    background-color: rgb(245, 245, 245);
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* header */
+a.bar {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    display: block;
+    width: 25px;
+    height: 5px;
+    background: black;
+    margin: 3px 0;
+}
+
+.bar.on .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    transition: .4s;
+    margin: 3px -400px;
+
+}
+
+.bar.on .bar2 {
+    opacity: 0;
+}
+
+.bar.on .bar3 {
+    transform: translate(0, -5px) rotate(45deg);
+    transition: .4s;
+    margin: 3px -400px;
+
+}
+
+header {
+    height: 80px;
+    align-items: center;
+}
+
+.header-inner {
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-inner h1 img {
+    height: 4vw;
+}
+
+.gnb {
+    position: absolute;
+    z-index: 40;
+    right: 12%;
+    top: 3%;
+}
+
+.main-wrap {
+    margin: auto;
+    width: 90vw;
+}
+
+.menu-box {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 30;
+    padding: 100px 0 0 40px;
+    transition: .35s;
+
+}
+
+.menu-box.on {
+    left: 0;
+}
+
+.menu-box .login-icon ion-icon {
+    font-size: 80px;
+}
+
+.menu-box span {
+    font-size: 13px;
+    background-color: rgb(221, 223, 241);
+    padding: 5px;
+    color: rgb(64, 58, 150);
+}
+
+.login-icon {
+    align-items: center;
+    gap: 10px;
+}
+
+.login-icon a {
+    align-items: center;
+}
+
+.menu-box .login-icon {
+    font-size: 25px;
+}
+
+.menu-box .login-icon ion-icon.arrow {
+    transform: scaleX(-1);
+    font-size: 40px;
+}
+
+.menu-list-flex {
+    justify-content: space-around;
+    padding: 10px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.menu-list-flex li {
+    width: 100%;
+    text-align: center;
+}
+
+.line-set {
+    border-right: 1px solid gray;
+}
+
+.login-list-set li {
+    padding: 10px 0;
+}
+
+.login-list-set li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.login-list-set li a ion-icon {
+    font-size: 25px;
+}
+
+.menu-box a:hover {
+    color: #f7323f;
+}
+
+.menu-box a:hover ion-icon {
+    color: #f7323f;
+}
+
+/* section-1 */
+.top {
+    padding: 0;
+    font-family: JalnanGothic;
+    position: relative;
+}
+
+.main-img {
+    width: 90vw;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top h2 {
+    font-size: 5vw;
+    color: white;
+    text-shadow: 0px 1px 1px #000;
+
+}
+
+.search {
+    align-items: center;
+    width: 70vw;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+input {
+    font-family: JalnanGothic;
+    border: none;
+    width: 80%;
+    outline: none;
+}
+
+ion-icon {
+    color: gray;
+    padding: 5px;
+}
+
+::placeholder {
+    opacity: 70%;
+}
+
+/* .section-2 */
+.check-in {
+    overflow: hidden;
+}
+
+.section-2.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrap-wrap {
+    position: relative;
+    height: 350px;
+}
+
+.kuni-list {
+    position: relative;
+}
+
+.kuni {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.kuni.on {
+    opacity: 1;
+}
+
+.contents {
+    position: relative;
+}
+
+
+.text-wrap {
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    text-align: right;
+    text-shadow: 0px 1px 1px #000;
+    color: white;
+}
+
+.text-wrap span {
+    font-size: 12px;
+}
+
+/* section-3 */
+.event {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.enent-list li a img {
+    width: 43vw;
+    border-radius: 20px;
+}
+
+.right {
+    width: 50%;
+    position: relative;
+}
+
+.sentaku {
+    align-items: end;
+    justify-content: space-between;
+}
+
+.swiper {
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrap-slide {
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.wrap-slide.on {
+    display: block;
+}
+
+.slide-1 {
+    position: relative;
+}
+
+.slide-1 p {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.wrap-slide.on {
+    display: block;
+}
+
+.sentaku ul li {
+    font-size: 12px;
+    padding: 0 3px;
+}
+
+.sentaku ul li a.on {
+    color: var(--point-color--);
+}
+
+.osusume {
+    width: 43vw;
+    height: 20vh;
+    border-radius: 20px;
+}
+
+.name {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 1px #000;
+    z-index: 99;
+}
+
+/* section */
+.tomari .sentaku {
+    width: 83%;
+}
+
+.wrap-osusume {
+    position: relative;
+    height: 500px;
+}
+
+.kokunai-wrap {
+    width: 100%;
+    display: flex;
+}
+
+.ninki-kaigai,
+.ninki-kokunai {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    transition: .35s;
+}
+
+.ninki-kaigai.on,
+.ninki-kokunai.on {
+    opacity: 1;
+}
+
+.ninki-kaigai>li,
+.ninki-kokunai>li {
+    width: 40%;
+    padding: 3px;
+}
+
+.li-list li {
+    line-height: 20px;
+    font-family: Pretendard-Regular;
+}
+
+.tomari-img img {
+    width: 100%;
+    height: 130px;
+    border-radius: 20px;
+}
+
+.surui {
+    color: #99999a;
+    font-size: 11px;
+}
+
+.namae {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ichi {
+    color: #3b3b3b;
+    font-size: 12px;
+}
+
+.hoshi {
+    display: flex;
+    color: #3b3b3b;
+    ;
+    font-size: 11px;
+    align-items: center;
+}
+
+.hoshi a {
+    padding: 0 8px 0 0;
+    color: #000;
+    background-color: rgb(255, 187, 0);
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.kupon {
+    color: #99999a;
+    font-size: 12px;
+}
+
+.nedan {
+    font-size: 15px;
+}
+
+.nedan {
+    font-size: 13px;
+}
+
+.nedan s {
+    font-size: 12px;
+    color: #99999a;
+}
+
+.tomari {
+    position: relative;
+}
+
+.button {
+    z-index: 99;
+    position: absolute;
+    top: 65px;
+    right: -10%;
+    font-size: 10px;
+    text-align: left;
+    color: white;
+}
+
+.button li {
+    margin-bottom: 20px;
+}
+
+.button li a {
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #b4b5b6;
+    font-family: Pretendard-Regular;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+}
+
+.button li a.on {
+    background-color: #1273e4;
+}
+
+.button li a {
+    padding: 3px 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+/* hot인기펜션 */
+.ninki-hot {
+    justify-content: space-between;
+}
+
+.ninki-trip>li {
+    margin-bottom: 25px;
+    margin-left: 5px;
+}
+
+.ninki-list {
+    background: white;
+    border-radius: 20px;
+}
+
+.ninki-list li img {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+}
+
+.icon-5 {
+    font-size: 35px;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 0;
+}
+
+.ninki-list .ichi {
+    display: flex;
+    align-items: center;
+}
+
+.tomari-img-1 {
+    height: 150px;
+    object-fit: cover;
+}
+
+.ninki-list .surui,
+.ninki-list .icon-5,
+.ninki-list .ichi,
+.ninki-list .namae {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.ninki-list .ichi {
+    padding-bottom: 15px;
+}
+
+/* sec-5 */
+h3 {
+    margin-bottom: 10px;
+}
+
+.sec-5 {
+    margin-top: 50px;
+}
+
+.osusume2 {
+    width: 100%;
+    height: 300px;
+}
+
+.sec-5 .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-5 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper2 {
+    position: relative;
+}
+
+.mySwiper2 .swiper-pagination {
+    position: absolute;
+    bottom: 0;
+}
+
+/* footer */
+footer {
+    font-size: 12px;
+    font-family: Pretendard-Regular;
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+    color: gray;
+}
+
+footer>p {
+    margin: 10px 0;
+}
+
+.but-f a {
+    display: block;
+    border: 1px solid #000;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.f-menu {
+    margin: 20px 0;
+}
+
+.f-menu>li {
+    margin: 10px 0;
+}
+
+.f-sub {
+    margin: 5px 0;
+}
+
+.f-main>a,
+footer h4 {
+    font-weight: bold;
+    color: #666666;
+}
+
+.copy-text {
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+.sns {
+    position: relative;
+    left: 85%;
+}
+
+.sns li a ion-icon {
+    font-size: 30px;
+}
