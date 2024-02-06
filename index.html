@@ -1,704 +1,831 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./trip.css">
-    <link rel="stylesheet" href="./swiper-bundle.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./trip.css" />
+    <link rel="stylesheet" href="./swiper-bundle.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <header class="flex">
-        <div class="header-inner flex">
-            <h1><a href="#"><img src="./trip.imgs/logo.webp" alt=""></a></h1>
-            <div class="gnb flex">
-                <span> <a href="#" class="bar">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
-                    </a></span>
-            </div>
+      <div class="header-inner flex">
+        <div class="header-set flex">
+          <h1>
+            <a href="#"><img src="./trip.imgs/logo.webp" alt="" /></a>
+          </h1>
+          <ul class="flex">
+            <li class="main-menu">
+              <a href="#">국내여행지</a>
+              <ul class="sub-menu sub-menu-1 flex">
+                <li><a href="#">서울</a></li>
+                <li><a href="#">경기도</a></li>
+                <li><a href="#">강원도</a></li>
+                <li><a href="#">충청북도</a></li>
+                <li><a href="#">충청남도</a></li>
+                <li><a href="#">인천</a></li>
+                <li><a href="#">전라북도</a></li>
+                <li><a href="#">전라남도</a></li>
+                <li><a href="#">제주도</a></li>
+                <li><a href="#">경상북도</a></li>
+                <li><a href="#">경상남도</a></li>
+                <li><a href="#">대전</a></li>
+                <li><a href="#">부산</a></li>
+                <li><a href="#">울산</a></li>
+                <li><a href="#">대구</a></li>
+                <li><a href="#">울릉도</a></li>
+                <li><a href="#">독도</a></li>
+              </ul>
+            </li>
+            <li class="main-menu">
+              <a href="#">해외여행지</a>
+              <ul class="sub-menu sub-menu-2">
+                <li><a href="#">북아메리카</a></li>
+                <li><a href="#">유럽</a></li>
+                <li><a href="#">아시아</a></li>
+                <li><a href="#">아프리카</a></li>
+                <li><a href="#">남아메리카</a></li>
+                <li><a href="#">오세아니아</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <div class="menu-box">
-            <div class="login-icon flex">
-                <ion-icon class="size-icon" name="person-circle"></ion-icon>
-                <div class="flex-jc">
-                    <a class="flex" href="">
-                        회원가입 / 로그인 <ion-icon class="arrow" name="chevron-back-outline"></ion-icon></a>
-                    <span>여기어때 회원가입하고 엘리트 할인 혜택 받으세요!</span>
-                </div>
-            </div>
-            <ul class="flex menu-list-flex">
-                <li class="line-set"><a href="#">포인트</a></li>
-                <li><a href="#">쿠폰</a></li>
-            </ul>
-            <ul class="login-list-set">
-                <li><a href="#"><ion-icon name="calendar-clear-outline"></ion-icon>비회원 예약조회</a></li>
-                <li><a href="#"><ion-icon name="gift-outline"></ion-icon>이벤트</a></li>
-                <li><a href="#"><ion-icon name="call-outline"></ion-icon>고객센터</a></li>
-            </ul>
+        <div class="gnb flex">
+          <span>
+            <a href="#" class="bar">
+              <span class="bar1"></span>
+              <span class="bar2"></span>
+              <span class="bar3"></span> </a
+          ></span>
         </div>
+      </div>
+      <div class="menu-box">
+        <div class="login-icon flex">
+          <ion-icon class="size-icon" name="person-circle"></ion-icon>
+          <div class="flex-jc">
+            <a class="flex" href="">
+              회원가입 / 로그인
+              <ion-icon class="arrow" name="chevron-back-outline"></ion-icon
+            ></a>
+            <span>여기어때 회원가입하고 엘리트 할인 혜택 받으세요!</span>
+          </div>
+        </div>
+        <ul class="flex menu-list-flex">
+          <li class="line-set"><a href="#">포인트</a></li>
+          <li><a href="#">쿠폰</a></li>
+        </ul>
+        <ul class="login-list-set">
+          <li>
+            <a href="#"
+              ><ion-icon name="calendar-clear-outline"></ion-icon>비회원
+              예약조회</a
+            >
+          </li>
+          <li>
+            <a href="#"><ion-icon name="gift-outline"></ion-icon>이벤트</a>
+          </li>
+          <li>
+            <a href="#"><ion-icon name="call-outline"></ion-icon>고객센터</a>
+          </li>
+        </ul>
+      </div>
     </header>
     <div class="main-wrap">
-        <section class="top">
-            <img class="main-img" src="trip.imgs/핑크여행지.jpg" alt="">
-            <div class="wrap">
-                <h2>국내부터 해외까지 <br>
-                    여행할때 여기어때</h2>
-                <div class="search flex">
-                    <ion-icon name="search-outline"></ion-icon><input type="text" placeholder="여행지나 숙소를 검색해보세요">
-                </div>
+      <section class="top">
+        <img class="main-img" src="trip.imgs/고화질사진2.jpg" alt="" />
+        <div class="wrap">
+          <h2>
+            국내부터 해외까지 <br />
+            여행할때 여기어때
+          </h2>
+          <div class="no-wab">
+            <div class="search flex">
+              <div class="set-search search1 flex">
+                <ion-icon name="search-outline"></ion-icon
+                ><input
+                  type="text"
+                  placeholder="여행지나 숙소를 검색해보세요"
+                />
+              </div>
             </div>
-        </section>
-        <section class="check-in">
+          </div>
+          <div class="wab">
+            <div class="search flex">
+              <div class="set-search search1 flex">
+                <ion-icon name="search-outline"></ion-icon
+                ><input
+                  type="text"
+                  placeholder="여행지나 숙소를 검색해보세요"
+                />
+              </div>
+              <div class="set-search search2 flex">
+                <ion-icon name="calendar-clear-outline"></ion-icon
+                ><input type="date" />
+              </div>
+              <div class="set-search search3 flex">
+                <ion-icon name="person-outline"></ion-icon
+                ><input type="text" placeholder="인원2명" />
+                <div class="but-n flex">
+                  <div class="but-set-l">
+                    <p>인원</p>
+                    <span>유아 및 아동도 인원수에 포함해주세요</span>
+                  </div>
+                  <div class="but-set-r flex">
+                    <div><a href="#">-</a></div>
+                    <span class="num">1</span>
+                    <div><a href="#">+</a></div>
+                  </div>
+                </div>
+              </div>
+              <div class="blue-but"><a href="#">검색</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="main-big-wrap">
+        <div class="big-wrap-1">
+          <section class="check-in">
             <h3>오늘 체크인 호텔 특가</h3>
             <div class="wrap-wrap">
-                <div class="swiper1 mySwiper1">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <figure><img src="./trip.imgs/호텔수영장.jpg" alt=""></figure>
-                            <div class="text-wrap">
-                                <p>세인트존스 호텔 <br>
-                                    <span>강릉시 강릉 강문해변 앞</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure><img src="./trip.imgs/호텔.jpg" alt=""></figure>
-                            <div class="text-wrap">
-                                <p>아르가트 호텔 <br>
-                                    <span>영등포구 선유도역 도보 4분</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure><img src="./trip.imgs/숙소수영.jpg" alt=""></figure>
-                            <div class="text-wrap">
-                                <p>더 스테이트 선유 호텔 <br>
-                                    <span>영등포구 선유도역 도보 2분</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure><img src="./trip.imgs/숙소.jpg" alt=""></figure>
-                            <div class="text-wrap">
-                                <p>센텀마크 호텔 양양 <br>
-                                    <span>양양군 양양종합터미널 차량3분</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <figure><img src="./trip.imgs/호텔바다.jpg" alt=""></figure>
-                            <div class="text-wrap">
-                                <p>더 스테이 클래식 호텔 명동 <br>
-                                    <span>중구 시청역 도보 6분</span>
-                                </p>
-                            </div>
-                        </div>
+              <div class="swiper1 mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./trip.imgs/고화질호텔6.jpg" alt="" />
+                    </figure>
+                    <div class="text-wrap">
+                      <p>
+                        세인트존스 호텔 <br />
+                        <span>강릉시 강릉 강문해변 앞</span>
+                      </p>
                     </div>
-                    <div class="swiper-pagination"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./trip.imgs/고화질호텔4.jpg" alt="" />
+                    </figure>
+                    <div class="text-wrap">
+                      <p>
+                        아르가트 호텔 <br />
+                        <span>영등포구 선유도역 도보 4분</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./trip.imgs/고화질호텔3.jpg" alt="" />
+                    </figure>
+                    <div class="text-wrap">
+                      <p>
+                        더 스테이트 선유 호텔 <br />
+                        <span>영등포구 선유도역 도보 2분</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./trip.imgs/고화질호텔1.jpg" alt="" />
+                    </figure>
+                    <div class="text-wrap">
+                      <p>
+                        센텀마크 호텔 양양 <br />
+                        <span>양양군 양양종합터미널 차량3분</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <figure>
+                      <img src="./trip.imgs/고화질호텔2.jpg" alt="" />
+                    </figure>
+                    <div class="text-wrap">
+                      <p>
+                        더 스테이 클래식 호텔 명동 <br />
+                        <span>중구 시청역 도보 6분</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
+                <div class="swiper-pagination"></div>
+              </div>
             </div>
-        </section>
-        <section class="event flex">
+          </section>
+          <section class="event flex">
             <div class="left-right">
-                <h3>이벤트</h3>
-                <ul class="enent-list">
-                    <li><a href="#"><img src="./trip.imgs/이벤트1.png" alt=""></a></li>
-                    <li><a href="#"><img src="./trip.imgs/이벤트2.png" alt=""></a></li>
-                </ul>
+              <h3>이벤트</h3>
+              <ul class="enent-list">
+                <li>
+                  <a href="#"><img src="./trip.imgs/이벤트1.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./trip.imgs/이벤트2.png" alt="" /></a>
+                </li>
+              </ul>
             </div>
             <div class="right">
-                <div class="sentaku sentaku-1 flex">
-                    <h3>인기 여행지</h3>
-                    <ul class="flex">
-                        <li><a href="#kuni-1" class="on">
-                                해외
-                            </a></li>
-                        <li><a href="#kuni-2">
-                                국내
-                            </a></li>
-                    </ul>
+              <div class="sentaku sentaku-1 flex">
+                <h3>인기 여행지</h3>
+                <ul class="flex">
+                  <li><a href="#kuni-1" class="on"> 해외 </a></li>
+                  <li><a href="#kuni-2"> 국내 </a></li>
+                </ul>
+              </div>
+              <div class="swiper slide1">
+                <div class="wrap-slide on" id="kuni-1">
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/에스파냐.jpg" alt="" />
+                    <p class="name">에스파냐</p>
+                  </div>
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/베트남.jpg" alt="" />
+                    <p class="name">베트남</p>
+                  </div>
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/체코.jpg" alt="" />
+                    <p class="name">체코</p>
+                  </div>
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/태국.jpg" alt="" />
+                    <p class="name">태국</p>
+                  </div>
                 </div>
-                <div class="swiper slide1">
-                    <div class="wrap-slide on" id="kuni-1">
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/유럽.jpg" alt="">
-                            <p class="name">에스파냐</p>
-                        </div>
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/유럽거리.jpg" alt="">
-                            <p class="name">체코</p>
-                        </div>
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/자유의여신.jpg" alt="">
-                            <p class="name">오만</p>
-                        </div>
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/하얀해변.jpg" alt="">
-                            <p class="name">이란</p>
-                        </div>
-                    </div>
-                    <div class="wrap-slide " id="kuni-2">
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/한국 (1).jpg" alt="">
-                            <p class="name">부산</p>
-                        </div>
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/한국 (10).jpg" alt="">
-                            <p class="name">제주도</p>
-                        </div>
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/한국 (2).jpg" alt="">
-                            <p class="name">전주</p>
-                        </div>
-                        <div class="slide-1"><img class="osusume" src="./trip.imgs/한국 (3).jpg" alt="">
-                            <p class="name">서울</p>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+                <div class="wrap-slide" id="kuni-2">
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/제주.jpg" alt="" />
+                    <p class="name">제주도</p>
+                  </div>
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/서울.jpg" alt="" />
+                    <p class="name">서울</p>
+                  </div>
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/전주.jpg" alt="" />
+                    <p class="name">전주</p>
+                  </div>
+                  <div class="slide-1">
+                    <img class="osusume" src="./trip.imgs/부산.jpg" alt="" />
+                    <p class="name">부산</p>
+                  </div>
                 </div>
-        </section>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </section>
+        </div>
         <section class="tomari">
-            <div class="sentaku sentaku-2 flex">
-                <h3>인기 추천 숙소</h3>
-            </div>
-            <ul class="button">
-                <li><a href="#all-1" class="on">전체</a></li>
-                <li><a href="#hotel-1">호텔</a></li>
-                <li><a href="#motel-1">모텔</a></li>
-                <li><a href="#house-1">펜션</a></li>
-                <li><a href="#camping-1">글램핑</a></li>
-                <li><a href="#k-house-1">한옥</a></li>
+          <div class="sentaku sentaku-2 flex">
+            <h3>인기 추천 숙소</h3>
+          </div>
+          <ul class="button">
+            <li><a href="#all-1" class="on">전체</a></li>
+            <li><a href="#hotel-1">호텔</a></li>
+            <li><a href="#motel-1">모텔</a></li>
+            <li><a href="#house-1">펜션</a></li>
+            <li><a href="#camping-1">글램핑</a></li>
+            <li><a href="#k-house-1">한옥</a></li>
+          </ul>
+          <div class="wrap-osusume">
+            <ul class="flex ninki-kaigai ninki-trip on" id="all-1">
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/글램핑2.jpg" alt="" />
+                  </li>
+                  <li class="surui">글램핑</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/호텔1.jpg" alt="" />
+                  </li>
+                  <li class="surui">호텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/한옥4.jpg" alt="" />
+                  </li>
+                  <li class="surui">한옥</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/펜션.jpg" alt="" />
+                  </li>
+                  <li class="surui">펜션</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
             </ul>
+            <ul class="flex ninki-kokunai ninki-trip" id="hotel-1">
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/호텔3.jpg" alt="" />
+                  </li>
+                  <li class="surui">호텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/호텔.jpg" alt="" />
+                  </li>
+                  <li class="surui">호텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/호텔1.jpg" alt="" />
+                  </li>
+                  <li class="surui">호텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/호텔2.jpg" alt="" />
+                  </li>
+                  <li class="surui">호텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
             </ul>
-            <div class="wrap-osusume">
-                <ul class="flex ninki-kaigai ninki-trip on" id="all-1">
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/글램핑2.jpg" alt="">
-                            </li>
-                            <li class="surui">글램핑</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소.jpg" alt="">
-                            </li>
-                            <li class="surui">호텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/한옥4.jpg" alt="">
-                            </li>
-                            <li class="surui">한옥</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소안2.jpg" alt="">
-                            </li>
-                            <li class="surui">펜션</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
+            <ul class="flex ninki-kaigai ninki-trip" id="motel-1">
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/모텔3.jpg" alt="" />
+                  </li>
+                  <li class="surui">모텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
                 </ul>
-                <ul class="flex ninki-kokunai ninki-trip" id="hotel-1">
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/야자수호텔.jpg" alt="">
-                            </li>
-                            <li class="surui">호텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소수영.jpg" alt="">
-                            </li>
-                            <li class="surui">호텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소안.jpg" alt="">
-                            </li>
-                            <li class="surui">호텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소.jpg" alt="">
-                            </li>
-                            <li class="surui">호텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/모텔.jpg" alt="" />
+                  </li>
+                  <li class="surui">모텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
                 </ul>
-                <ul class="flex ninki-kaigai ninki-trip" id="motel-1">
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소수영.jpg" alt="">
-                            </li>
-                            <li class="surui">모텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소안2.jpg" alt="">
-                            </li>
-                            <li class="surui">모텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/호텔뷰.jpg" alt="">
-                            </li>
-                            <li class="surui">모텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/호텔바다.jpg" alt="">
-                            </li>
-                            <li class="surui">모텔</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/모텔1.jpg" alt="" />
+                  </li>
+                  <li class="surui">모텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
                 </ul>
-                <ul class="flex ninki-kaigai ninki-trip" id="house-1">
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/호텔뷰.jpg" alt="">
-                            </li>
-                            <li class="surui">펜션</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소안.jpg" alt="">
-                            </li>
-                            <li class="surui">펜션</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소수영.jpg" alt="">
-                            </li>
-                            <li class="surui">펜션</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/숙소안2.jpg" alt="">
-                            </li>
-                            <li class="surui">펜션</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/모텔2.jpg" alt="" />
+                  </li>
+                  <li class="surui">모텔</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
                 </ul>
-                <ul class="flex ninki-kaigai ninki-trip" id="camping-1">
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/글램핑1.jpg" alt="">
-                            </li>
-                            <li class="surui">글램핑</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/글램핑2.jpg" alt="">
-                            </li>
-                            <li class="surui">글램핑</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/글램핑3.jpg" alt="">
-                            </li>
-                            <li class="surui">글램핑</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/글램핑4.jpg" alt="">
-                            </li>
-                            <li class="surui">글램핑</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
+              </li>
+            </ul>
+            <ul class="flex ninki-kaigai ninki-trip" id="house-1">
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/펜션.jpg" alt="" />
+                  </li>
+                  <li class="surui">펜션</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
                 </ul>
-                <ul class="flex ninki-kaigai ninki-trip" id="k-house-1">
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/한옥1.jpg" alt="">
-                            </li>
-                            <li class="surui">한옥</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/한옥2.jpg" alt="">
-                            </li>
-                            <li class="surui">한옥</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/한옥3.jpg" alt="">
-                            </li>
-                            <li class="surui">한옥</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul class="li-list">
-                            <li class="tomari-img"><img src="./trip.imgs/한옥4.jpg" alt="">
-                            </li>
-                            <li class="surui">한옥</li>
-                            <li class="namae">구월 반월 아시아드호텔</li>
-                            <li class="ichi">인천터미널역 도보 14분</li>
-                            <li class="hoshi"><a href="#">
-                                    <ion-icon name="star"></ion-icon><b>9.5</b>
-                                </a> 8,307명 평가</li>
-                            <li class="kupon">쿠폰 적용시</li>
-                            <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
-                        </ul>
-                    </li>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/펜션1.jpg" alt="" />
+                  </li>
+                  <li class="surui">펜션</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/펜션2.jpg" alt="" />
+                  </li>
+                  <li class="surui">펜션</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/펜션3.jpg" alt="" />
+                  </li>
+                  <li class="surui">펜션</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="flex ninki-kaigai ninki-trip" id="camping-1">
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/글램핑.jpg" alt="" />
+                  </li>
+                  <li class="surui">글램핑</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/글램핑1.jpg" alt="" />
+                  </li>
+                  <li class="surui">글램핑</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/글램핑2.jpg" alt="" />
+                  </li>
+                  <li class="surui">글램핑</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/글램핑3.jpg" alt="" />
+                  </li>
+                  <li class="surui">글램핑</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="flex ninki-kaigai ninki-trip" id="k-house-1">
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/한옥1.jpg" alt="" />
+                  </li>
+                  <li class="surui">한옥</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/한옥2.jpg" alt="" />
+                  </li>
+                  <li class="surui">한옥</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/한옥3.jpg" alt="" />
+                  </li>
+                  <li class="surui">한옥</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="li-list">
+                  <li class="tomari-img">
+                    <img src="./trip.imgs/한옥4.jpg" alt="" />
+                  </li>
+                  <li class="surui">한옥</li>
+                  <li class="namae">구월 반월 아시아드호텔</li>
+                  <li class="ichi">인천터미널역 도보 14분</li>
+                  <li class="hoshi">
+                    <a href="#"> <ion-icon name="star"></ion-icon><b>9.5</b> </a>
+                    8,307명 평가
+                  </li>
+                  <li class="kupon">쿠폰 적용시</li>
+                  <li class="nedan"><b>40,000원</b> <s>45,000원</s></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </section>
         <section class="sec-5">
-            <h3>이번주 HOT 인기 펜션</h3>
-            <div class="osusume2">
-                <div class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <ul class="ninki-list">
-                                <li class="tomari-img-1"><img src="./trip.imgs/야자수호텔.jpg" alt="">
-                                </li>
-                                <li class="surui">모텔</li>
-                                <li class="namae">구월 반월 아시아드호텔</li>
-                                <li class="flex icon-5"><ion-icon name="wifi-outline"></ion-icon></ion-icon>
-                                    <ion-icon name="today-outline"></ion-icon>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <ion-icon name="car-outline"></ion-icon>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </li>
-                                <li class="ichi"><ion-icon name="navigate"></ion-icon>인천터미널역 도보 14분</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="ninki-list">
-                                <li class="tomari-img-1"><img src="./trip.imgs/숙소.jpg" alt="">
-                                </li>
-                                <li class="surui">모텔</li>
-                                <li class="namae">구월 반월 아시아드호텔</li>
-                                <li class="flex icon-5"><ion-icon name="wifi-outline"></ion-icon></ion-icon>
-                                    <ion-icon name="today-outline"></ion-icon>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <ion-icon name="car-outline"></ion-icon>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </li>
-                                <li class="ichi"><ion-icon name="navigate"></ion-icon>인천터미널역 도보 14분</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="ninki-list">
-                                <li class="tomari-img-1"><img src="./trip.imgs/호텔수영장.jpg" alt="">
-                                </li>
-                                <li class="surui">모텔</li>
-                                <li class="namae">구월 반월 아시아드호텔</li>
-                                <li class="flex icon-5"><ion-icon name="wifi-outline"></ion-icon></ion-icon>
-                                    <ion-icon name="today-outline"></ion-icon>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <ion-icon name="car-outline"></ion-icon>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </li>
-                                <li class="ichi"><ion-icon name="navigate"></ion-icon>인천터미널역 도보 14분</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="ninki-list">
-                                <li class="tomari-img-1"><img src="./trip.imgs/숙소수영.jpg" alt="">
-                                </li>
-                                <li class="surui">모텔</li>
-                                <li class="namae">구월 반월 아시아드호텔</li>
-                                <li class="flex icon-5"><ion-icon name="wifi-outline"></ion-icon></ion-icon>
-                                    <ion-icon name="today-outline"></ion-icon>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <ion-icon name="car-outline"></ion-icon>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </li>
-                                <li class="ichi"><ion-icon name="navigate"></ion-icon>인천터미널역 도보 14분</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="ninki-list">
-                                <li class="tomari-img-1"><img src="./trip.imgs/숙소안2.jpg" alt="">
-                                </li>
-                                <li class="surui">모텔</li>
-                                <li class="namae">구월 반월 아시아드호텔</li>
-                                <li class="flex icon-5"><ion-icon name="wifi-outline"></ion-icon></ion-icon>
-                                    <ion-icon name="today-outline"></ion-icon>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <ion-icon name="car-outline"></ion-icon>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </li>
-                                <li class="ichi"><ion-icon name="navigate"></ion-icon>인천터미널역 도보 14분</li>
-                            </ul>
-                        </div>
-                        <div class="swiper-slide">
-                            <ul class="ninki-list">
-                                <li class="tomari-img-1"><img src="./trip.imgs/호텔뷰.jpg" alt="">
-                                </li>
-                                <li class="surui">모텔</li>
-                                <li class="namae">구월 반월 아시아드호텔</li>
-                                <li class="flex icon-5"><ion-icon name="wifi-outline"></ion-icon></ion-icon>
-                                    <ion-icon name="today-outline"></ion-icon>
-                                    <ion-icon name="call-outline"></ion-icon>
-                                    <ion-icon name="car-outline"></ion-icon>
-                                    <ion-icon name="cart-outline"></ion-icon>
-                                </li>
-                                <li class="ichi"><ion-icon name="navigate"></ion-icon>인천터미널역 도보 14분</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
+          <h3>이번주 HOT 인기 추천숙소</h3>
+          <div class="osusume2">
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper osusume3">
+                <div class="swiper-slide">
+                  <img src="./trip.imgs/추천1.jpg" alt="" />
+                  <p>제주 세인트호텔</p>
                 </div>
+                <div class="swiper-slide">
+                  <img src="./trip.imgs/추천4.jpg" alt="" />
+                  <p>서울 에가이에호텔</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./trip.imgs/추천2.jpg" alt="" />
+                  <p>전주 온 한옥스테이</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./trip.imgs/추천3.jpg" alt="" />
+                  <p>외도 반월호텔</p>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./trip.imgs/추천.jpg" alt="" />
+                  <p>인천 칸가에호텔</p>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
+          </div>
         </section>
-    </div>
+            </div>
+      </div>
     <footer>
-        <h4>고객센터</h4>
-        <p>오전 9시-새벽 3시운영</p>
-        <ul class="flex">
+      <div class="f-set3">
+        <div class="f-set1">
+          <h4>고객센터</h4>
+          <p>오전 9시-새벽 3시운영</p>
+          <ul class="flex">
             <li class="but-f"><a href="#">tel 1670-6250</a></li>
             <li class="but-f"><a href="#">kakao 카카오문의</a></li>
-        </ul>
-        <ul class="f-menu">
-            <li class="f-main"><a href="#">회사</a>
-                <ul class="f-sub">
-                    <li><a href="#">회사소개</a></li>
-                </ul>
-            </li>
-            <li class="f-main"><a href="#">서비스</a>
-                <ul class="f-sub">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">자주 묻는 질문</a></li>
-                    <li><a href="#">기업 출장/복지 서비스문의</a></li>
-                </ul>
-            </li>
-            <li class="f-main"><a href="#">혜택</a>
-                <ul class="f-sub">
-                    <li><a href="#">트립홀릭 혜택 안내</a></li>
-                    <li><a href="#">엘리트 혜택 안내</a></li>
-                    <li><a href="#">비즈니스 회원 혜택 안내</a></li>
-                    <li><a href="#">여기어때 상품권 조회</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="copy-text">
-            <p>(주)여기어때컴퍼니 <br>
-
-                주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인 <br>
-
-                전자우편주소 : help@goodchoice.kr | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | 전화번호 : 1670-6250 |
-                <br>
-                호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<br>
-
-                (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
-            </p>
+          </ul>
         </div>
-        <ul>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">소비자 분쟁해결기준</a></li>
-            <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
-        </ul>
-        <ul class="flex sns">
-            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
-            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
-        </ul>
+        <div class="f-set2">
+          <ul class="f-menu">
+            <li class="f-main">
+              <a href="#">회사</a>
+              <ul class="f-sub">
+                <li><a href="#">회사소개</a></li>
+              </ul>
+            </li>
+            <li class="f-main">
+              <a href="#">서비스</a>
+              <ul class="f-sub">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자주 묻는 질문</a></li>
+                <li><a href="#">기업 출장/복지 서비스문의</a></li>
+              </ul>
+            </li>
+            <li class="f-main">
+              <a href="#">혜택</a>
+              <ul class="f-sub">
+                <li><a href="#">트립홀릭 혜택 안내</a></li>
+                <li><a href="#">엘리트 혜택 안내</a></li>
+                <li><a href="#">비즈니스 회원 혜택 안내</a></li>
+                <li><a href="#">여기어때 상품권 조회</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy-text">
+        <p>
+          (주)여기어때컴퍼니 <br />
+
+          주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 :
+          정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인 <br />
+
+          전자우편주소 : help@goodchoice.kr | 통신판매번호 : 2017-서울강남-01779
+          | 관광사업자 등록번호 : 제1026-24호 | 전화번호 : 1670-6250 |
+          <br />
+          호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<br />
+
+          (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며,
+          상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게
+          있습니다.
+        </p>
+      </div>
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">소비자 분쟁해결기준</a></li>
+        <li><a href="#">콘텐츠산업진흥법에 의한 표시</a></li>
+      </ul>
+      <ul class="flex sns">
+        <li>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
+        <li>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
     </footer>
     <script src="./jquery-3.7.1.min.js"></script>
     <script src="./trip.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper1 = new Swiper(".mySwiper1", {
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-        });
-        var swiper = new Swiper(".mySwiper2", {
-            slidesPerView: 2,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            }
-        });
+      var swiper1 = new Swiper(".mySwiper1", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+      });
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints:{
+          767:{
+            slidesPerView: 4,
+          },
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>
