@@ -733,9 +733,6 @@ footer h4 {
 @media screen and (min-width: 768px) {
 
   /* header */
-  body {
-    background-color: #a5c2e4;
-  }
 
   .bar1,
   .bar2,
@@ -907,9 +904,11 @@ footer h4 {
     justify-content: space-between;
     overflow: hidden;
   }
-
+  .enent-list li:nth-child(2){
+    display: none;
+  }
   .enent-list li a img {
-    width: 43vw;
+    width: 100%;
     border-radius: 20px;
   }
 
@@ -1274,6 +1273,14 @@ footer h4 {
   .sns li a ion-icon {
     font-size: 30px;
   }
+  .enent-list li:nth-child(2){
+    display:block;
+  }
+  .enent-list li{
+    width: 40vw;
+    height: 18vw;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -1557,11 +1564,11 @@ footer h4 {
     width: 30%;
   }
 
-  .search3:hover .but-n {
+  /* .search3:hover .but-n {
     opacity: 1;
-  }
+  } */
 
-  .but-n {
+  /* .but-n {
     opacity: 0;
     position: absolute;
     top: 92%;
@@ -1575,7 +1582,7 @@ footer h4 {
     color: #4d4c4c;
     overflow: hidden;
     padding: 20px;
-  }
+  } */
 
   .but-set-l {
     width: 48%;
@@ -1707,8 +1714,8 @@ footer h4 {
 
   .enent-list li {
     display: block;
-    width: 237px;
-    height: 80px;
+    width: 21vw;
+    height: 7vw;
   }
 
   .enent-list li a img {
