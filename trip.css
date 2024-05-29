@@ -1432,6 +1432,7 @@ footer h4 {
   .main-menu {
     position: relative;
     font-size: 1.1vw;
+    margin-top: 2vw;
   }
 
   .main-menu:hover>a {
@@ -1461,8 +1462,7 @@ footer h4 {
   }
 
   .sub-menu li a {
-    padding: 2px;
-    transition: 0.2s;
+    padding: 0 2px;
   }
 
   .sub-menu-1 li {
@@ -1474,16 +1474,16 @@ footer h4 {
   }
 
   .sub-menu li:hover>a {
-    border-bottom: 5px solid #1273e4;
+    border-bottom: 3px solid #1273e4;
   }
 
   .main-menu:hover .sub-menu.sub-menu-1 {
-    height: 400px;
+    height: 200px;
     box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.241);
   }
 
   .main-menu:hover .sub-menu.sub-menu-2 {
-    height: 330px;
+    height: 300px;
     box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.241);
   }
 
@@ -1707,14 +1707,14 @@ footer h4 {
   }
 
   .left-right {
-    width: 90%;
-    height: 10vw;
+    width: 23vw;
+    height: 9.5vw;
     overflow: hidden;
   }
 
   .enent-list li {
     display: block;
-    width: 21vw;
+    width: 22vw;
     height: 7vw;
   }
 
@@ -1936,7 +1936,7 @@ footer h4 {
 
   /* footer */
   footer {
-    padding: 2% 10%;
+    padding: 2% 10% 1%;
   }
 
   .f-set1 {
@@ -1960,6 +1960,12 @@ footer h4 {
   }
 
   .copy-text {
-    font-size: .7vw;
+    font-size: .8vw;
+    margin-top: -3vw;
+    line-height: 1.2vw;
+  }
+  .footer-list li{
+    margin-top: 1vw;
+    margin-right: 1vw;
   }
 }
